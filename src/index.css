@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "poppins", BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  /* overflow: visible; */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient( to left,#0000 0%,#0000 25% , #529b0350 30%, #529b0350 70% ,#0000 75%, #0000 100% );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #529b036b;
+  border-radius: 5px;
+  width:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #529b038e;
+}
+
+.input:focus{
+  outline:0;
+}
+.leading-0{
+  line-height: 0;
+}
+
+
+.testimonial .swiper-pagination-bullet{
+  width:16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid #529B03;
+  opacity: 1;
+  border-radius: 20px;
+}
+.testimonial .swiper-pagination{
+  position: relative;
+  bottom:0 !important;
+}
+
+.testimonial .swiper-pagination-bullet-active{
+  background-color: #529B03;
+  width:32px
+}
