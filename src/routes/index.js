@@ -31,7 +31,6 @@ export default function Router() {
         { element: <Navigate to="/dashboard/overview" replace />, index: true },
         { path: 'overview', element: <Overview /> },
         { path: 'manage', element: <Manage /> },
-        { path: 'add', element: <AddBook /> },
       ]
     },
 
@@ -40,4 +39,3 @@ export default function Router() {
 
 const Overview = Loadable(lazy(() => import('../pages/dashboard/Overview')));
 const Manage = Loadable(lazy(() => import('../pages/dashboard/Manage')));
-const AddBook = Loadable(lazy(() => import('../pages/AddBook')));
